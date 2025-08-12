@@ -27,11 +27,11 @@ val app = routes(
 
     val port = System.getenv("PORT")?.toIntOrNull() ?: 8090
     val jettyServer = app.asServer(Jetty(port)).start()
-    loggerInfo("\n\n\u001B[34m Server started on port ${jettyServer.port()} \u001B[36m")
-    loggerInfo("\u001B[32m Server started listening \u001B[36m")
+    //loggerInfo("\n\n\u001B[34m Server started on port ${jettyServer.port()} \u001B[36m")
+    //loggerInfo("\u001B[32m Server started listening \u001B[36m")
     readln()
     jettyServer.stop()
-    loggerInfo("\n\n\u001B[33m Leaving main")
+    //loggerInfo("\n\n\u001B[33m Leaving main")
 
 
 
