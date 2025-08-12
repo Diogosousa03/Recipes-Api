@@ -16,7 +16,7 @@ const val USE_DATABASE = false
  */
 
 fun main(){
-
+/*
 val userRoutes = routes(
     "/User" bind Method.POST to User_WebApi::postUser
 )
@@ -25,14 +25,15 @@ val app = routes(
     userRoutes
 )
 
+ */
+
     val port = System.getenv("PORT")?.toIntOrNull() ?: 8090
-    val jettyServer = app.asServer(Jetty(port)).start()
+    //val jettyServer = app.asServer(Jetty(port)).start()
     //loggerInfo("\n\n\u001B[34m Server started on port ${jettyServer.port()} \u001B[36m")
     //loggerInfo("\u001B[32m Server started listening \u001B[36m")
     readln()
-    jettyServer.stop()
+    //jettyServer.stop()
     //loggerInfo("\n\n\u001B[33m Leaving main")
-
 
 
 }
